@@ -49,6 +49,7 @@ a.logo img
 .section_presentation
 {
   width: 100%;
+  height: 300px;
   overflow: hidden;
   display: flex;
   flex-flow: wrap column;
@@ -58,7 +59,7 @@ a.logo img
 }
 h2
 {
-  width: 100%;
+  width: 90%;
   display: flex;
   justify-content: center;
   font-family: roboto;
@@ -248,4 +249,37 @@ footer
   display: flex;
   color: white;
   margin-left: 20px;
+}
+@media all and (min-width : 767px)
+{
+.localisation
+{
+  height: 80px;
+  font-size: 30px;
+  background-color: #d5d8d7;
+
+}
+.btn_1,
+.btn_2,
+.btn_3
+{
+  display: flex;
+  justify-content: center;
+}
+
+}
+@media all and (min-width : 992px)
+{
+.btn_1,
+.btn_2,
+.btn_3
+{
+  display: flex;
+  justify-content: center;
+}
+.section_restaurant__cards
+{
+  display: flex;
+  justify-content: center;
+}
 }
