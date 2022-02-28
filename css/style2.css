@@ -15,19 +15,20 @@ body
 }
 header
 {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 .fa-arrow-left:before 
 {
-    color: black;
-    display: flex;
-    margin-right: 40px;
-    margin-top: 10px;
+  color: black;
+  display: flex;
+  margin-right: 40px;
+  margin-top: 10px;
 }
 .logo
 {
-    display: flex;
+  display: flex;
+  justify-content: center;
 }
 .restaurant img
 {
@@ -35,19 +36,23 @@ header
   height: 140px;
   object-fit: cover;
 }
+.menu
+{
+  width: 100%;
+}
 .menu__restaurant
 {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    background-color: #f5f5f5;
-    box-shadow: 0px rgb(253, 252, 252);
-    border: none;
-    border-radius: 30px; 
-    text-align: center;
-    height: 1150px;
-    width: 100%;
-    margin-top: -40px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f5f5f5;
+  box-shadow: 1px rgb(253, 252, 252);
+  border: none;
+  border-radius: 30px; 
+
+  height: 1150px;
+  width: 100%;
+  margin-top: -40px;
 }
 .restaurant__name
 {
@@ -64,28 +69,67 @@ header
   margin-left: 40px;
   margin-top: 15px;
 }
+.menu__carte_entrees h3,
+.menu__carte_plats h3,
+.menu__carte_desserts h3
+{
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+.underline-h3 
+{
+  width: 60px;
+  height:4px;
+  background-color: #99e2d0;
+  margin-bottom: 10px;
+  padding: 0;
+  margin-left: 10px;
+}
+.card 
+{
+  background-color: white;
+  box-shadow: 2px 2px 2px lightgrey;
+  border-radius: 20px 20px;
+  width: 95%;
+  margin: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  transition: all 2000ms;
+  cursor: pointer;
+  overflow: hidden;
+}
 .menu__carte_entrees__entrees_card,
 .menu__carte_plats__plats_card,
 .menu__carte_desserts__desserts_card
 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: white;
-    border: none;
-    border-radius: 25px; 
-    text-align: center;
-    height: 70px;
-    width: 100%;
-    margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+  background-color: white;
+  border: none;
+  border-radius: 25px; 
+  height: 70px;
+  width: 100%;
+  margin-bottom: 20px;
 }
 .card__text
 {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
 }
-@media all and (min-width : 767px)
+.card__text h4
 {
+  margin-bottom: 0px;
+}
+.card__text p
+{
+  margin-top:5px;
+  margin-left:0px;
+}
 button.btn
 {
   background: linear-gradient(170deg, #ff79da, #9356dc);
@@ -100,12 +144,58 @@ button.btn
   max-width: 250px;
   align-self: center;
 }
-footer
+footer 
 {
-    background: #353535;
-    color: white;
-    height: 180px;
+  width: 100%;
+  height: 250px;
+  background: #353535;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
 }
+.footerTitle 
+{
+  font-family: "Shrikhand", cursive;
+  font-style: italic;
+  margin-left: 40px;
+}
+.footerLink 
+{
+  align-items: center;
+  display: flex;
+  color: white;
+  margin-left: 40px;
+}
+.footer_r
+{
+  align-items: center;
+  display: flex;
+  color: white;
+  margin-left: 20px;
+}
+.footer_d
+{
+  align-items: center;
+  display: flex;
+  color: white;
+  margin-left: 20px;
+}
+
+
+
+
+@media all and (min-width : 767px)
+{
+.fa-arrow-left:before 
+{
+  font-size: 18px;
+  color: black;
+  display: flex;
+  margin-right: 90px;
+  margin-top: 10px;
+}
+
 }
 @media all and (min-width : 992px)
 {
