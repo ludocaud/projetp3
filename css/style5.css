@@ -13,7 +13,6 @@ body
   padding-block-start: 0px;
   padding-block-end: 0px;
   width: 100%;
-
 }
 header
 {
@@ -56,7 +55,7 @@ header
   background-color: #f5f5f5;
   box-shadow: 1px rgb(253, 252, 252);
   border-radius: 30px;
-  height: 1150px;
+  height: 1100px;
   width: 100%;
   margin-top: -40px;
   padding-left: 10px;
@@ -116,78 +115,34 @@ header
 {
   display: flex;
   align-items: center;
+  justify-content:space-around;
   background-color: white;
   border: none;
   border-radius: 20px; 
   height: 70px;
   width: 100%;
   margin-bottom: 20px;
-  padding-left: 10px;
 }
-
-.menu__carte_entrees__entrees_card,
-.menu__carte_plats__plats_card,
-.menu__carte_desserts__desserts_card
-{
-  justify-content: space-between;
-}
-
-.carte 
-{
-  width: 90%;
-}
-
 .card__check
 {
- width: 0px;
- height: 48%;
- line-height: 100%;
- background-color: #99e2d0;
- position: relative;
- right: -16px;
- transition:position 200ms linear;
- transition:width 200ms linear;
-}
-
-.card__check
-{
-  color: green;
-  padding-top: 30px;
-  padding-left: 20px;
-  border-radius: 0px 20px 20px 0px;
-  opacity: 0;
-}
-.menu__carte_entrees__entrees_card:hover .card__check,
-.menu__carte_plats__plats_card:hover .card__check,
-.menu__carte_desserts__desserts_card:hover .card__check
-{
-  right: 0px;
-  width: 40px;
-  opacity: 1;
-}
-
-@keyframes rotate{
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-.menu__carte_entrees__entrees_card:hover .card__check i,
-.menu__carte_plats__plats_card:hover .card__check i,
-.menu__carte_desserts__desserts_card:hover .card__check i
-{
-  animation: rotate 300ms linear 200ms;
-  opacity: 1;
-}
+ 
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
 
 
+}
 .card__text
 {
   display: flex;
   flex-direction: column;
-  padding-left: 0px;
+  justify-content: flex-start;
 }
 .card__text h4
 {
@@ -215,15 +170,15 @@ button.btn
 }
 footer 
 {
-  margin-top: 1050px;
+  margin-top: 1150px;
   width: 100%;
   height: 250px;
   background: #353535;
   color: white;
   display: flex;
   flex-direction: column;
+  text-decoration: none;
   position: static;
-  padding-top: 60px;
 }
 .footerTitle 
 {
@@ -237,11 +192,6 @@ footer
   display: flex;
   color: white;
   margin-left: 40px;
-  text-decoration: none;
-}
-samp.fa-utensils:before
-{
-padding-right: 20px;
 }
 .footer_r
 {
@@ -249,7 +199,6 @@ padding-right: 20px;
   display: flex;
   color: white;
   margin-left: 20px;
-  text-decoration: none;
 }
 .footer_d 
 {
@@ -257,8 +206,19 @@ padding-right: 20px;
   display: flex;
   color: white;
   margin-left: 20px;
-  text-decoration: none;
 }
+
+
+.menuItem .menuInfo .menuText {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+
+
 @media all and (min-width : 767px)
 {
 .fa-arrow-left:before 
@@ -269,52 +229,9 @@ padding-right: 20px;
   margin-right: 90px;
   margin-top: 10px;
 }
-.menu__carte_entrees__entrees_card,
-.menu__carte_plats__plats_card,
-.menu__carte_desserts__desserts_card
-{
-  width: 700px;
-  margin-left: 30px;
-}
 
 }
 @media all and (min-width : 992px)
 {
-.restaurant img
-{
-  height: 250px;
-}
-.fa-arrow-left::before 
-{
-  margin-right: 200px;
-}
-.menu__restaurant
-{
-  height: 500px;
-}
-
-.menu__carte_entrees__entrees_card,
-.menu__carte_plats__plats_card, 
-.menu__carte_desserts__desserts_card
-{
-width:350px;
-}
-.menu__carte_entrees,
-.menu__carte_plats,
-.menu__carte_desserts
-{
-margin-right: 100px;
-}
-
-.menu
-{
-  display: flex;
-  justify-content: space-between;
-}
-footer
-{
-margin-top: 500px;
-}
-
 
 }

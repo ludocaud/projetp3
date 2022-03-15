@@ -140,9 +140,27 @@ position: relative;
 {
   background-color: #dec4ff;
 }
-.fas fa-store
+
+.fa-stack
 {
+  position: relative;
+  top: -70px;
+  left:300px;
   color: #9356dc;
+
+}
+
+.heart_vide,
+.heart_plein
+{
+  position: absolute;
+}
+
+.fa-stack .heart_plein
+{
+  left: -20px;
+  opacity: 0;
+  transition: opacity 350ms;
 }
 .numero_btn_1 p,
 .numero_btn_2 p,
@@ -157,8 +175,28 @@ position: relative;
 .fas
 {
   margin-left: 20px;
-  margin-right: 5px;
+  margin-right: 55px;
 }
+
+.fa-stack .heart_vide
+{
+  transition: opacity 350ms;
+  color: black;
+  opacity: 1;
+}
+
+.fa-stack:hover .heart_vide
+{
+  opacity: 0;
+
+}
+
+.fa-stack:hover .heart_plein
+{
+  opacity: 1;
+  
+}
+
 .section_restaurants
 {
   width: 100%;
@@ -245,7 +283,7 @@ footer
   align-items: center;
   display: flex;
   color: white;
-  margin-left: 40px;
+  margin-left: 20px;
 }
 .footer_r
 {
@@ -265,9 +303,9 @@ footer
 {
 .localisation
 {
-  height: 80px;
+  height: 40px;
   font-size: 30px;
-  background-color: #d5d8d7;
+  background-color: #c2c5c4d5;
 
 }
 .btn_1,
@@ -278,19 +316,43 @@ footer
   justify-content: center;
 }
 
+.restaurants__new
+{
+  margin-left: 650px;
+}
+
+.fa-stack
+{
+  left:700px;
+}
 }
 @media all and (min-width : 992px)
 {
+.menu__restaurant
+{
+  height: 800px;
+}
+
 .btn_1,
 .btn_2,
 .btn_3
 {
   display: flex;
   justify-content: center;
+}
+.restaurants__new
+{
+  margin-left: 260px;
 }
 .section_restaurant__cards
 {
   display: flex;
   justify-content: center;
+}
+
+
+.fa-stack
+{
+  left: 300px;
 }
 }
