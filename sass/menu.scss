@@ -1,0 +1,228 @@
+// font import
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&family=Shrikhand&display=swap");
+@import "variables.scss";
+@import "mixins.scss"; // pour une animation et une propriété commune aux cards
+@import "header.scss"; // pour le header commun
+@import "footer.scss"; // pour le footer commun
+@import "btn.scss"; // pour le bouton
+@import "heart.scss"; // pour le coeur
+
+// backgrounds for the desktop, wrapper and fonts
+body {
+  background-color: $hardbg; // pour le desktop
+  margin: 0px;
+  font-family: Roboto, sans-serif;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.bg {
+  background-color: $bg;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  &:visited {
+    color: black;
+  }
+}
+// arrow header
+.fa-arrow-left {
+  position: relative;
+  top: 20px;
+  right: 45px;
+  font-size: x-large;
+}
+
+// top of the page under header // first image, 2nd title et font awesome icon
+.restaurant {
+  & img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+  }
+  &__name {
+    border-top-left-radius: 40px 40px;
+    border-top-right-radius: 40px 40px;
+    transform: translateY(-80px);
+    margin-bottom: -80px;
+    padding: 5px $main_margin;
+    background-color: $bg;
+    font-family: shrikhand, cursive;
+    font-size: large;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+//menu section
+.menu {
+  & h3 {
+    padding-bottom: 0px;
+    margin: 0 $main_margin;
+  }
+  & h4,
+  & p {
+    padding: 0.25rem $main_margin;
+  }
+  & h4 {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-size: larger;
+    // pour mettre trois points de suspension si c'est nécéssaire : 3 lignes CSS
+    white-space: nowrap; /* interdiction de passer à la ligne */
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  & p {
+    margin-bottom: 5px;
+  }
+  display: flex;
+  flex-direction: column;
+  padding: 0 0vw;
+}
+.underline-h3 {
+  width: 40px;
+  height: 0.25em;
+  background-color: $tertiary;
+  margin: 0;
+  padding: 0;
+
+  margin-left: $main_margin;
+}
+// Decalage manuel pour apparition du menu mixin appear
+.menu__carte_entrees {
+  @include card_appear;
+}
+.menu__carte_plats {
+  @include card_appear;
+  & .card {
+    animation-delay: 500ms;
+  }
+}
+.menu__carte_desserts {
+  @include card_appear;
+  & .card {
+    animation-delay: 1s;
+  }
+}
+
+// ine the menu section : .card
+.card {
+  @include cardppty;
+  margin: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  transition: all 2000ms;
+  cursor: pointer;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  &__text {
+    display: flex;
+    flex: 100%;
+    white-space: nowrap; /* interdiction de passer à la ligne */
+    flex-direction: column;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    transition: all $transitiontime;
+    &__description {
+      flex: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      & p {
+        margin-top: 2px;
+        overflow: hidden;
+        white-space: nowrap; /* interdiction de passer à la ligne */
+      }
+      &__ingredients {
+        text-overflow: ellipsis;
+      }
+      &__price {
+        font-weight: bold;
+      }
+    }
+  }
+  // check animation in .card
+  &__check {
+    flex: 0%;
+    color: $bg;
+    // height: 100%;
+    background-color: $tertiary;
+    font-size: xx-large;
+    text-align: center;
+    // centrer verticalement sur une ligne:
+    height: 2.1em; /* hauteur du parent */
+    line-height: 2.1em; /* hauteur de ligne (identique) */
+    white-space: nowrap; /* interdiction de passer à la ligne */
+    border-top-right-radius: 20px 20px;
+    border-bottom-right-radius: 20px 20px;
+    transform: translateX(100px);
+    cursor: pointer;
+    transition: all $transitiontime;
+  }
+  &:hover > &__check {
+    flex: 25%;
+    transform: translateX(0px);
+    background-color: $tertiary;
+    cursor: pointer;
+    color: $bg;
+  }
+  &:hover > &__text {
+    flex: 75%;
+  }
+  &:hover .fa-check-circle {
+    transform: rotate(0deg);
+  }
+}
+.fa-check-circle {
+  transform: rotate(359deg);
+  transition: transform $transitiontime;
+}
+// ajout btn par rapport au fichier btn.scss
+.btn {
+  width: 200px;
+  align-self: center;
+  margin: 2rem;
+}
+
+// Media queries for these menu pages
+@media screen and (min-width: $breakp1) {
+  .menu {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    & h3 {
+      margin: 0 1rem;
+    }
+    & h4,
+    & p {
+      padding: 0.25rem 1rem;
+    }
+  }
+  .underline-h3 {
+    margin-left: 1rem;
+  }
+  .card {
+    max-width: 310px;
+
+    &__text {
+      padding: 0px;
+    }
+    &__check {
+      height: 70px;
+    }
+  }
+}
+@media screen and (min-width: 1280px) {
+  .card {
+    max-width: 400px;
+  }
+}
+.button {
+  display: flex;
+  justify-content: center;
+}

@@ -138,24 +138,21 @@ header
 
 .card__check
 {
- width: 0px;
- height: 48%;
+ width: 60px;
+ height: 45%;
  line-height: 100%;
  background-color: #99e2d0;
  position: relative;
  right: -16px;
+ color: green;
+ padding-top: 30px;
+ padding-left: 20px;
+ border-radius: 0px 20px 20px 0px;
+ opacity: 0;
  transition:position 200ms linear;
  transition:width 200ms linear;
 }
 
-.card__check
-{
-  color: green;
-  padding-top: 30px;
-  padding-left: 20px;
-  border-radius: 0px 20px 20px 0px;
-  opacity: 0;
-}
 .menu__carte_entrees__entrees_card:hover .card__check,
 .menu__carte_plats__plats_card:hover .card__check,
 .menu__carte_desserts__desserts_card:hover .card__check

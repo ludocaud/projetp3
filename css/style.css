@@ -127,7 +127,7 @@ position: relative;
   margin: 16px;
   padding: 16px;
   background-color: #f5f5f5;
-  box-shadow: 0px rgb(253, 252, 252);
+  box-shadow: 0px rgb(231, 231, 231);
   border: none;
   border-radius: 25px; 
   text-align: center;
@@ -138,7 +138,7 @@ position: relative;
 }
 .numero_btn_3
 {
-  background-color: #dec4ff;
+  background-color: #f1ecf8;
 }
 
 .fa-stack
@@ -270,7 +270,8 @@ footer
   color: white;
   display: flex;
   flex-direction: column;
-  text-decoration: none;
+  position: static;
+  padding-top: 60px;
 }
 .footerTitle 
 {
@@ -278,12 +279,16 @@ footer
   font-style: italic;
   margin-left: 40px;
 }
+samp.fa-utensils:before
+{
+padding-right: 20px;
+}
 .footerLink 
 {
   align-items: center;
   display: flex;
   color: white;
-  margin-left: 20px;
+  margin-left: 40px;
 }
 .footer_r
 {
