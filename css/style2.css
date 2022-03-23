@@ -13,7 +13,15 @@ body
   padding-block-start: 0px;
   padding-block-end: 0px;
   width: 100%;
-
+}
+a
+{
+  text-decoration: none;
+}
+h4,p
+{
+  font-family:roboto;
+  
 }
 header
 {
@@ -55,7 +63,7 @@ header
   flex-direction: column;
   background-color: #f5f5f5;
   box-shadow: 1px rgb(253, 252, 252);
-  border-radius: 30px;
+  border-radius: 30px 30px 0px 0px;
   height: 1150px;
   width: 100%;
   margin-top: -40px;
@@ -120,9 +128,19 @@ header
   border: none;
   border-radius: 20px; 
   height: 70px;
-  width: 100%;
+  width: 87%;
+  margin-left: 15px;
   margin-bottom: 20px;
-  padding-left: 10px;
+  padding-left: 20px;
+}
+
+.card__complet
+{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 20px;
 }
 
 .menu__carte_entrees__entrees_card,
@@ -139,19 +157,26 @@ header
 
 .card__check
 {
- width: 50px;
- height: 48%;
+ width: 0px;
+ height: 100%;
  line-height: 100%;
  background-color: #99e2d0;
  position: relative;
  right: -15px;
  color: green;
- padding-top: 30px;
- padding-left: 20px;
  border-radius: 0px 20px 20px 0px;
  opacity: 0;
- transition:position 200ms linear;
- transition:width 200ms linear;
+ transition:position 300ms linear;
+ transition:width 300ms linear;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+
+.card_price
+{
+  font-weight: bold;
 }
 
 .menu__carte_entrees__entrees_card:hover .card__check,
@@ -159,26 +184,42 @@ header
 .menu__carte_desserts__desserts_card:hover .card__check
 {
   right: 0px;
-  width: 40px;
+  width: 70px;
   opacity: 1;
 }
 
 @keyframes rotate{
   0% {
-    transform: rotate(0deg);
+    transform: rotate(100deg);
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+@keyframes appear 
+{
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 .menu__carte_entrees__entrees_card:hover .card__check i,
 .menu__carte_plats__plats_card:hover .card__check i,
 .menu__carte_desserts__desserts_card:hover .card__check i
 {
-  animation: rotate 300ms linear 200ms;
+  animation: rotate 200ms linear 100ms;
   opacity: 1;
 }
-
+.menu__carte_entrees__entrees_card,
+.menu__carte_plats__plats_card,
+.menu__carte_desserts__desserts_card
+{
+  animation: appear 1000ms linear 100ms;
+}
 
 .card__text
 {
@@ -233,10 +274,14 @@ footer
   align-items: center;
   display: flex;
   color: white;
-  margin-left: 40px;
+  margin-left: 60px;
   text-decoration: none;
 }
-samp.fa-utensils:before
+.fa-utensils
+{
+  padding-right: 26px;
+}
+.fa-hands-helping
 {
 padding-right: 20px;
 }
@@ -272,6 +317,11 @@ padding-right: 20px;
 {
   width: 700px;
   margin-left: 30px;
+}
+
+.card__complet
+{
+  padding-right: 50px;
 }
 
 }
