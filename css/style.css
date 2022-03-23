@@ -281,7 +281,7 @@ footer
   display: flex;
   flex-direction: column;
   position: static;
-  padding-top: 60px;
+  padding-top: 30px;
 }
 .footerTitle 
 {
@@ -289,7 +289,10 @@ footer
   font-style: italic;
   margin-left: 40px;
 }
-.fa-utensils,
+.fa-utensils
+{
+  padding-right: 26px;
+}
 .fa-hands-helping
 {
 padding-right: 20px;
@@ -299,7 +302,7 @@ padding-right: 20px;
   align-items: center;
   display: flex;
   color: white;
-  margin-left: 40px;
+  margin-left: 80px;
 }
 .footer_r
 {
