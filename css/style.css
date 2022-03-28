@@ -87,10 +87,12 @@ button.btn
   border-radius: 50px;
   border: none;
   margin-bottom: 20px;
+  margin-top: -20p;
   box-shadow: 4px 4px 2px lightgrey;
   width: 360px;
   max-width: 250px;
   align-self: center;
+
 }
 .Fonctionnement
 {
