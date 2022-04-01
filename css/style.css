@@ -123,9 +123,9 @@ position: relative;
   text-decoration: none;
 }
 
-.numero_btn_1,
-.numero_btn_2,
-.numero_btn_3
+div.btn_1,
+div.btn_2,
+div.btn_3
 {
   display: flex;
   align-items: center;
@@ -138,11 +138,11 @@ position: relative;
   border-radius: 25px; 
   text-align: center;
   height: 64px;
-  width: 90%;
+  width: 83%;
   line-height: 32px;
   white-space: nowrap;
 }
-.numero_btn_3
+div.btn_3
 {
   background-color: #f1ecf8;
 }
@@ -168,9 +168,9 @@ position: relative;
   opacity: 0;
   transition: opacity 350ms;
 }
-.numero_btn_1 p,
-.numero_btn_2 p,
-.numero_btn_3 p
+.numero_btn_1,
+.numero_btn_2,
+.numero_btn_3 
 {
   border-radius: 100%;
   width: 30px;
@@ -329,12 +329,13 @@ padding-right: 20px;
   background-color: #c2c5c4d5;
 
 }
-.btn_1,
-.btn_2,
-.btn_3
+div.btn_1,
+div.btn_2,
+div.btn_3
 {
   display: flex;
   justify-content: center;
+  width: 90%;
 }
 
 .restaurants__new
@@ -354,12 +355,14 @@ padding-right: 20px;
   height: 800px;
 }
 
-.btn_1,
-.btn_2,
-.btn_3
+div.btn_1,
+div.btn_2,
+div.btn_3
 {
   display: flex;
   justify-content: center;
+  align-items: center;
+  width: 95%;
 }
 .restaurants__new
 {
