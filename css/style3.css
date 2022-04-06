@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&family=Shrikhand&display=swap");
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
 body
 {
   margin: 0px;
@@ -13,6 +15,7 @@ body
   padding-block-start: 0px;
   padding-block-end: 0px;
   width: 100%;
+  
 }
 a
 {
@@ -95,6 +98,8 @@ header
   justify-content: flex-start;
   margin-left: 10px;
   margin-bottom: 10px;
+  font-family: 'roboto',sans-serif;
+  font-weight: 300;
 }
 .underline-h3 
 {
@@ -172,7 +177,7 @@ header
  background-color: #99e2d0;
  position: relative;
  right: -15px;
- color: green;
+ color: white;
  border-radius: 0px 20px 20px 0px;
  opacity: 0;
  transition:position 300ms linear;
@@ -214,12 +219,15 @@ header
     transform: translateY(0);
   }
 }
-.menu__carte_entrees__entrees_card:hover .card__check i,
-.menu__carte_plats__plats_card:hover .card__check i,
-.menu__carte_desserts__desserts_card:hover .card__check i
+.menu__carte_entrees__entrees_card:hover .card__complet .testellipsis,
+.menu__carte_plats__plats_card:hover .card__complet .testellipsis,
+.menu__carte_desserts__desserts_card:hover .card__complet .testellipsis
 {
-  animation: rotate 200ms linear 100ms;
-  opacity: 1;
+  width: 180px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
 }
 .menu__carte_entrees__entrees_card,
 .menu__carte_plats__plats_card,

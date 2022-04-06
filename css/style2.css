@@ -94,6 +94,8 @@ header
   justify-content: flex-start;
   margin-left: 10px;
   margin-bottom: 10px;
+  font-family: 'roboto',sans-serif;
+  font-weight: 300;
 }
 .underline-h3 
 {
@@ -163,7 +165,7 @@ header
  background-color: #99e2d0;
  position: relative;
  right: -15px;
- color: green;
+ color: white;
  border-radius: 0px 20px 20px 0px;
  opacity: 0;
  transition:position 300ms linear;
@@ -226,6 +228,7 @@ header
   display: flex;
   flex-direction: column;
   padding-left: 0px;
+
 }
 .card__text h4
 {
@@ -323,6 +326,15 @@ padding-right: 20px;
 {
   padding-right: 50px;
 }
+
+.menu__carte_entrees__entrees_card:hover .card__complet .testellipsis,
+.menu__carte_plats__plats_card:hover .card__complet .testellipsis,
+.menu__carte_desserts__desserts_card:hover .card__complet .testellipsis
+{
+  width: 180px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 
 }
 @media all and (min-width : 992px)
