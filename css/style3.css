@@ -266,6 +266,16 @@ button.btn
   max-width: 250px;
   align-self: center;
 }
+
+button.btn:hover
+{
+  background: linear-gradient(170deg, #f799dc, #be8ff7);
+  box-shadow: 6px 6px 4px rgb(133, 130, 130);
+}
+
+
+
+
 footer 
 {
   font-family: "roboto";
