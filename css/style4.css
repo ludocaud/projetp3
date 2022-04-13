@@ -383,7 +383,7 @@ button.btn:hover
 }
 .menu__restaurant
 {
-  height: 580px;
+  height: 650px;
 }
 .menu__carte_entrees__entrees_card,
 .menu__carte_plats__plats_card, 
@@ -412,7 +412,7 @@ button.btn:hover
 }
 footer
 {
-margin-top: 500px;
+margin-top: 550px;
 }
 
 }

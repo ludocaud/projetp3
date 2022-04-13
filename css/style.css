@@ -227,6 +227,7 @@ h2
 }
 button.btn
 {
+  font-family: "roboto";
   background: linear-gradient(170deg, #ff79da, #9356dc);
   color: white;
   font-size: large;
@@ -301,7 +302,7 @@ div.btn_3
   margin: 16px;
   padding: 16px;
   background-color: #f5f5f5;
-  box-shadow: 0px rgb(231, 231, 231);
+
   border: none;
   border-radius: 25px; 
   text-align: center;
