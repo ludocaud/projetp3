@@ -223,9 +223,7 @@ header
 .menu__carte_desserts__desserts_card:hover .card__complet .testellipsis
 {
   width: 180px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+
 
 }
 .menu__carte_entrees__entrees_card,
@@ -233,6 +231,9 @@ header
 .menu__carte_desserts__desserts_card
 {
   animation: appear 1000ms linear 100ms;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .card__text

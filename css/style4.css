@@ -347,6 +347,9 @@ padding-right: 8px;
 {
   width: 700px;
   margin-left: 30px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 button.btn:hover
