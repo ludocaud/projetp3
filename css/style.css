@@ -302,7 +302,6 @@ div.btn_3
   margin: 16px;
   padding: 16px;
   background-color: #f5f5f5;
-
   border: none;
   border-radius: 25px; 
   text-align: center;
@@ -320,16 +319,18 @@ div.btn_3
 {
   position: relative;
   top: -60px;
-  left:300px;
- 
+  right: 9px;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
 
 }
+
 .heart_vide,
 .heart_plein
 {
   font-size: x-large;
   position: absolute;
-
 }
 
 .fa-stack .heart_plein
@@ -364,24 +365,20 @@ div.btn_3
   margin-right: 30px;
 }
 
-
 .section_restaurants__card__caption
 {
   width: 100%;
- 
 }
-
 
 .fa-stack .heart_plein,
 .fa-stack .heart_vide
 {
-  left: -60px;
+  position: absolute;
   transition: opacity 350ms;
 }
 
 .fa-stack .heart_vide
 {
-
   color: black;
   opacity: 1;
 }
@@ -395,7 +392,6 @@ div.btn_3
 .fa-stack:hover .heart_plein
 {
   opacity: 1;
-  
 }
 
 .section_restaurants
@@ -561,11 +557,11 @@ div.numero_btn_3
   margin-left: 650px;
 }
 
-.fa-stack
+/*.fa-stack
 {
   left:700px;
   ;
-}
+}*/
 }
 @media all and (min-width : 992px)
 {
@@ -611,8 +607,8 @@ div.btn_3
 }
 
 
-.fa-stack
+/*.fa-stack
 {
   left: 300px;
-}
+}*/
 }
